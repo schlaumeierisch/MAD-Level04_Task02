@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Task02</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- title, instructions & all time statistics -->
+    <string name="game_name">Rock, Paper, Scissors</string>
+    <string name="instructions">Instructions: select rock, paper or scissors to play.</string>
+    <string name="all_time_statistics">Your all time statistics</string>
+
+    <!-- win/lose/draw & computer/you-->
+    <string name="win">Win</string>
+    <string name="win_counter">Wins: %1$d</string>
+    <string name="loss">Loss</string>
+    <string name="loss_counter">Losses: %1$d</string>
+    <string name="draw">Draw</string>
+    <string name="draw_counter">Draws: %1$d</string>
+    <string name="computer">Computer</string>
+    <string name="you">You</string>
+
+    <!-- imageView contentDescriptions & versus -->
+    <string name="current_player_move">Player\'s current move (rock, paper or scissors)</string>
+    <string name="current_computer_move">Computer\'s current move (paper, rock, scissors)</string>
+    <string name="computer_move">Computer\'s move (paper, rock, scissors)</string>
+    <string name="player_move">Player\'s move (paper, rock, scissors)</string>
+    <string name="versus">v.s.</string>
+
+    <!-- image buttons -->
+    <string name="rock_image_button">Rock image button</string>
+    <string name="paper_image_button">Paper image button</string>
+    <string name="scissors_image_button">Scissors image button</string>
+    <string name="fab_clear_history">FAB to clear history</string>
+    <string name="menu_item_play_game">Play</string>
+    <string name="menu_item_history">History</string>
+</resources>

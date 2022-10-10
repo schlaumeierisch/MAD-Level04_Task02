@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="240dp">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        tools:text="Draw"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        tools:text="Fri Aug 13 11:31:30 GMT+02:00 2021"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult" />
+
+    <ImageView
+        android:id="@+id/ivComputerMove"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#3F51B5"
+        app:layout_constraintEnd_toStartOf="@+id/tvVersus2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        app:srcCompat="@drawable/paper"
+        android:contentDescription="@string/computer_move" />
+
+    <ImageView
+        android:id="@+id/ivPlayerMove"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvVersus2"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        app:srcCompat="@drawable/paper"
+        android:contentDescription="@string/player_move" />
+
+    <TextView
+        android:id="@+id/tvVersus2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="@string/versus"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/ivComputerMove"
+        app:layout_constraintEnd_toStartOf="@+id/ivPlayerMove"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivComputerMove"
+        app:layout_constraintTop_toTopOf="@+id/ivComputerMove" />
+
+    <TextView
+        android:id="@+id/tvComputerResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/computer"
+        app:layout_constraintEnd_toEndOf="@+id/ivComputerMove"
+        app:layout_constraintStart_toStartOf="@+id/ivComputerMove"
+        app:layout_constraintTop_toBottomOf="@+id/ivComputerMove" />
+
+    <TextView
+        android:id="@+id/tvPlayerResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/you"
+        app:layout_constraintEnd_toEndOf="@+id/ivPlayerMove"
+        app:layout_constraintStart_toStartOf="@+id/ivPlayerMove"
+        app:layout_constraintTop_toBottomOf="@+id/ivPlayerMove" />
+</androidx.constraintlayout.widget.ConstraintLayout>
